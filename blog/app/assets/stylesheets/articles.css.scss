@@ -28,3 +28,18 @@ td {
 .field_with_errors {
 	color: red;
 }
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	margin-left: 16px;
+	display: inline-block;
+	border: 1px solid silver;
+	padding: 10px 20px;
+}
+
+.tableHead {
+	background: red;
+}
