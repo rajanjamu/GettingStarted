@@ -33,13 +33,22 @@ a {
 	text-decoration: none;
 }
 
+a:link, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.tableHead {
+	background: #16a085;
+	color: white;
+	border: 1px solid #16a085;
+}
+
 .button {
 	margin-left: 16px;
 	display: inline-block;
 	border: 1px solid silver;
 	padding: 10px 20px;
-}
-
-.tableHead {
-	background: red;
+	background: #16a085;
+	color: white;
 }
