@@ -1,11 +1,11 @@
 <h2>Listing Articles</h2>
-
-
+<%= link_to("New Article", new_article_path) %>
 <table>
 	<thead>
 		<tr>
 			<td>Title</td>
 			<td>Text</td>
+			<th colspan="3"></th>
 		</tr>
 	</thead>
 <% @articles.each do |f| %>
@@ -14,6 +14,7 @@
 		<td><%= f.text %></td>
 		<td><%= link_to("Show", article_path(f)) %></td>
 		<td><%= link_to("Edit", edit_article_path(f)) %></td>
+		<td><%= link_to("Delete", article_path(f) , method: :delete, data: {confirm: 'Are you sure?'}) %></td>
 	</tr>
 <% end %>
 </table>
